@@ -7,6 +7,7 @@ chrome.runtime.onInstalled.addListener(() => {
 const extensions = 'https://developer.chrome.com/docs/extensions';
 const webstore = 'https://developer.chrome.com/docs/webstore';
 
+// Needed to listen in to extension icon clicks
 chrome.action.onClicked.addListener(async (tab) => {
   if (tab.url.startsWith(extensions) || tab.url.startsWith(webstore)) {
     // Retrieve the action badge to check if the extension is 'ON' or 'OFF'
