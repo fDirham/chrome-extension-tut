@@ -1,0 +1,15 @@
+{
+  "manifest_version": 1,
+  "name": "Chat Companion",
+  "version": "1.0",
+  "description": "Insert description here",
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://developer.chrome.com/docs/extensions/*",
+        "https://developer.chrome.com/docs/webstore/*"
+      ]
+    }
+  ]
+}
